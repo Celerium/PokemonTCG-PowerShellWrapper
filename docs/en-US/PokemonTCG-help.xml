@@ -1,0 +1,2150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-PokemonTCGApiKey</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>PokemonTCGApiKey</command:noun>
+      <maml:description>
+        <maml:para>Sets the PokemonTCG API key</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Add-PokemonTCGApiKey cmdlet sets the PokemonTCG API key which is used to authenticate all API calls made to PokemonTCG</maml:para>
+      <maml:para>An API key is not required to use the PokemonTCG API. However if you aren't using an API key, you are rate limited to 1000 requests a day, and a maximum of 30 per minute</maml:para>
+      <maml:para>A PokemonTCG API key can be acquired via an account on https://dev.pokemontcg.io/</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-PokemonTCGApiKey</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGApiKey</dev:code>
+        <dev:remarks>
+          <maml:para>No API key is set</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGApiKey -ApiKey '12345'</dev:code>
+        <dev:remarks>
+          <maml:para>Sets the API key to the defined value</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <dev:code>'12345' | Add-PokemonTCGApiKey</dev:code>
+        <dev:remarks>
+          <maml:para>Sets the API key to the defined value</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/_Unique/Set-PokemonTCGApiKey.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGApiKey.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGApiKey.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-PokemonTCGBaseURI</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>PokemonTCGBaseURI</command:noun>
+      <maml:description>
+        <maml:para>Sets the base URI for the PokemonTCG API</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Add-PokemonTCGBaseURI cmdlet sets the base URI which is later used to construct the full URI for all API calls</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-PokemonTCGBaseURI</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGBaseURI</dev:code>
+        <dev:remarks>
+          <maml:para>The base URI will use https://api.pokemontcg.io/v2 which is PokemonTCG's default URI</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGBaseURI -BaseURI http://myapi.gateway.celerium.org</dev:code>
+        <dev:remarks>
+          <maml:para>A custom API gateway of http://myapi.gateway.celerium.org will be used for all API calls to PokemonTCG's API</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/_Unique/Set-PokemonTCGBaseURI.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGBaseURI.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGBaseURI.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGCard</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGCard</command:noun>
+      <maml:description>
+        <maml:para>Gets PokemonTCG cards</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGCard cmdlet gets PokemonTCG cards individually, in bulk, &amp; or with advanced query filters (Filters are case-sensitive)</maml:para>
+      <maml:para>Details on allowed queries can be found at https://docs.pokemontcg.io/api-reference/cards/card-object</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGCard</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>id</maml:name>
+          <maml:description>
+            <maml:para>The id of the card</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>select</maml:name>
+          <maml:description>
+            <maml:para>A comma delimited list of fields to return in the response</maml:para>
+            <maml:para>By default, all fields are returned if not defined</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGCard</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>select</maml:name>
+          <maml:description>
+            <maml:para>A comma delimited list of fields to return in the response</maml:para>
+            <maml:para>By default, all fields are returned if not defined</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="query">
+          <maml:name>q</maml:name>
+          <maml:description>
+            <maml:para>The search query</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>orderBy</maml:name>
+          <maml:description>
+            <maml:para>The field(s) to order the results by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>page</maml:name>
+          <maml:description>
+            <maml:para>Defines the page number to return</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+          <dev:type>
+            <maml:name>Int64</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>0</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>pageSize</maml:name>
+          <maml:description>
+            <maml:para>Defines the amount of items to return with each page</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+          <dev:type>
+            <maml:name>Int64</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>0</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>allPages</maml:name>
+          <maml:description>
+            <maml:para>Returns all items from an endpoint</maml:para>
+            <maml:para>When using this parameter there is no need to use the page parameter</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>id</maml:name>
+        <maml:description>
+          <maml:para>The id of the card</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>select</maml:name>
+        <maml:description>
+          <maml:para>A comma delimited list of fields to return in the response</maml:para>
+          <maml:para>By default, all fields are returned if not defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="query">
+        <maml:name>q</maml:name>
+        <maml:description>
+          <maml:para>The search query</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>orderBy</maml:name>
+        <maml:description>
+          <maml:para>The field(s) to order the results by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>page</maml:name>
+        <maml:description>
+          <maml:para>Defines the page number to return</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+        <dev:type>
+          <maml:name>Int64</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>0</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>pageSize</maml:name>
+        <maml:description>
+          <maml:para>Defines the amount of items to return with each page</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+        <dev:type>
+          <maml:name>Int64</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>0</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>allPages</maml:name>
+        <maml:description>
+          <maml:para>Returns all items from an endpoint</maml:para>
+          <maml:para>When using this parameter there is no need to use the page parameter</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>The PokemonTCG card object contains the following attributes: (https://docs.pokemontcg.io/api-reference/cards/card-object#attributes)     id string     name string     supertype string     subtypes list(string)     level string     hp string     types list(string)     evolvesFrom string     evolvesTo list(string)     rules list(string)     ancientTrait hash     abilities list(hash)     attacks list(hash)     weaknesses list(hash)     resistances list(hash)     retreatCost list(string)     convertedRetreatCost integer     set hash     number string     artist string     rarity string     flavorText string     nationalPokedexNumbers list(integer)     legalities hash     regulationMark string     images hash     tcgplayer hash     cardmarket hash</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGCard</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG cards</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGCard -id base3-3</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the PokemonTCG ditto object with the defined id</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <dev:code>'base3-3' | Get-PokemonTCGCard</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the PokemonTCG ditto object with the defined id</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGCard -q 'name:ditto'</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the first 250 ditto's from the PokemonTCG API</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGCard -q 'nationalPokedexNumbers:132'</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the first 250 ditto's from the PokemonTCG API</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 6 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGCard -q 'set.id:base*' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the first 250 pokemon from any base set starting with the defined term from the PokemonTCG API</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 7 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGCard -q 'set.id:base* types:water' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the first 250 water type pokemon from any base set starting with the defined term from the PokemonTCG API</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.pokemontcg.io/api-reference/cards/card-object#attributes</maml:linkText>
+        <maml:uri>https://docs.pokemontcg.io/api-reference/cards/card-object#attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-PokemonTCGApiKey</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>PokemonTCGApiKey</command:noun>
+      <maml:description>
+        <maml:para>Sets the PokemonTCG API key</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Add-PokemonTCGApiKey cmdlet sets the PokemonTCG API key which is used to authenticate all API calls made to PokemonTCG</maml:para>
+      <maml:para>An API key is not required to use the PokemonTCG API. However if you aren't using an API key, you are rate limited to 1000 requests a day, and a maximum of 30 per minute</maml:para>
+      <maml:para>A PokemonTCG API key can be acquired via an account on https://dev.pokemontcg.io/</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-PokemonTCGApiKey</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>ApiKey</maml:name>
+          <maml:description>
+            <maml:para>Defines your API secret key</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>ApiKey</maml:name>
+        <maml:description>
+          <maml:para>Defines your API secret key</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGApiKey</dev:code>
+        <dev:remarks>
+          <maml:para>No API key is set</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGApiKey -ApiKey '12345'</dev:code>
+        <dev:remarks>
+          <maml:para>Sets the API key to the defined value</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <dev:code>'12345' | Add-PokemonTCGApiKey</dev:code>
+        <dev:remarks>
+          <maml:para>Sets the API key to the defined value</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGApiKey.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGApiKey.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Add-PokemonTCGBaseURI</command:name>
+      <command:verb>Add</command:verb>
+      <command:noun>PokemonTCGBaseURI</command:noun>
+      <maml:description>
+        <maml:para>Sets the base URI for the PokemonTCG API</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Add-PokemonTCGBaseURI cmdlet sets the base URI which is later used to construct the full URI for all API calls</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Add-PokemonTCGBaseURI</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>BaseURI</maml:name>
+          <maml:description>
+            <maml:para>Define the base URI for the PokemonTCG API connection</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Https://api.pokemontcg.io/v2</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>BaseURI</maml:name>
+        <maml:description>
+          <maml:para>Define the base URI for the PokemonTCG API connection</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Https://api.pokemontcg.io/v2</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGBaseURI</dev:code>
+        <dev:remarks>
+          <maml:para>The base URI will use https://api.pokemontcg.io/v2 which is PokemonTCG's default URI</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Add-PokemonTCGBaseURI -BaseURI http://myapi.gateway.celerium.org</dev:code>
+        <dev:remarks>
+          <maml:para>A custom API gateway of http://myapi.gateway.celerium.org will be used for all API calls to PokemonTCG's API</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGBaseURI.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Add-PokemonTCGBaseURI.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-PokemonTCGQueryString</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>PokemonTCGQueryString</command:noun>
+      <maml:description>
+        <maml:para>Converts uri filter parameters</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Invoke-PokemonTCGRequest cmdlet converts &amp; formats uri filter parameters from a function which are later used to make the full resource uri for an API call</maml:para>
+      <maml:para>This is an internal helper function the ties in directly with the Invoke-PokemonTCGRequest &amp; any public functions that define parameters</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-PokemonTCGQueryString</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>resourceURI</maml:name>
+          <maml:description>
+            <maml:para>Defines the short resource uri (url) to use when creating the API call</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="2" aliases="none">
+          <maml:name>uriFilter</maml:name>
+          <maml:description>
+            <maml:para>Hashtable of values to combine a functions parameters with the resourceURI parameter</maml:para>
+            <maml:para>This allows for the full uri query to occur</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>resourceURI</maml:name>
+        <maml:description>
+          <maml:para>Defines the short resource uri (url) to use when creating the API call</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="2" aliases="none">
+        <maml:name>uriFilter</maml:name>
+        <maml:description>
+          <maml:para>Hashtable of values to combine a functions parameters with the resourceURI parameter</maml:para>
+          <maml:para>This allows for the full uri query to occur</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+        <dev:type>
+          <maml:name>Hashtable</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>ConvertTo-PokemonTCGQueryString -uriFilter $uriFilter -resourceURI '/cards'</dev:code>
+        <dev:remarks>
+          <maml:para>Example: (From public function)     $uriFilter = @{}</maml:para>
+          <maml:para>    ForEach ( $Key in $PSBoundParameters.GetEnumerator() ) {         if( $excludedParameters -contains $Key.Key ) {$null}         else{ $uriFilter += @{ $Key.Key = $Key.Value } }     }</maml:para>
+          <maml:para>    1x key = https://api.pokemontcg.io/v2/cards?q=name:ditto'     2x key = https://api.pokemontcg.io/v2/cards?q=types:water&amp;select=id,name'</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/ConvertTo-PokemonTCGQueryString.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/ConvertTo-PokemonTCGQueryString.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Export-PokemonTCGModuleSettings</command:name>
+      <command:verb>Export</command:verb>
+      <command:noun>PokemonTCGModuleSettings</command:noun>
+      <maml:description>
+        <maml:para>Exports the PokemonTCG BaseURI, API, &amp; JSON configuration information to file</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Export-PokemonTCGModuleSettings cmdlet exports the PokemonTCG BaseURI, API, &amp; JSON configuration information to file</maml:para>
+      <maml:para>Making use of PowerShell's System.Security.SecureString type, exporting module settings encrypts your API key in a format that can only be unencrypted with the your Windows account as this encryption is tied to your user principal This means that you cannot copy your configuration file to another computer or user account and expect it to work</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Export-PokemonTCGModuleSettings</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PokemonTCGConfPath</maml:name>
+          <maml:description>
+            <maml:para>Define the location to store the PokemonTCG configuration file</maml:para>
+            <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PokemonTCGConfFile</maml:name>
+          <maml:description>
+            <maml:para>Define the name of the PokemonTCG configuration file</maml:para>
+            <maml:para>By default the configuration file is named:     config.psd1</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Config.psd1</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PokemonTCGConfPath</maml:name>
+        <maml:description>
+          <maml:para>Define the location to store the PokemonTCG configuration file</maml:para>
+          <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PokemonTCGConfFile</maml:name>
+        <maml:description>
+          <maml:para>Define the name of the PokemonTCG configuration file</maml:para>
+          <maml:para>By default the configuration file is named:     config.psd1</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Config.psd1</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Export-PokemonTCGModuleSettings</dev:code>
+        <dev:remarks>
+          <maml:para>Validates that the BaseURI, API, and JSON depth are set then exports their values to the current user's PokemonTCG configuration file located at:     $env:USERPROFILE\PokemonTCG\config.psd1</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Export-PokemonTCGModuleSettings -PokemonTCGConfPath C:\PokemonTCG -PokemonTCGConfFile MyConfig.psd1</dev:code>
+        <dev:remarks>
+          <maml:para>Validates that the BaseURI, API, and JSON depth are set then exports their values to the current user's PokemonTCG configuration file located at:     C:\PokemonTCG\MyConfig.psd1</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Export-PokemonTCGModuleSettings.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Export-PokemonTCGModuleSettings.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGApiKey</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGApiKey</command:noun>
+      <maml:description>
+        <maml:para>Gets the PokemonTCG API key</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGApiKey cmdlet gets the PokemonTCG API key global variable</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGApiKey</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>plainText</maml:name>
+          <maml:description>
+            <maml:para>Decrypt and return the API key in plain text</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>plainText</maml:name>
+        <maml:description>
+          <maml:para>Decrypt and return the API key in plain text</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGApiKey</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the PokemonTCG API key global variable and returns it as a SecureString</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGApiKey -plainText</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the PokemonTCG API key global variable and returns it as plain text</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Get-PokemonTCGApiKey.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Get-PokemonTCGApiKey.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGBaseURI</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGBaseURI</command:noun>
+      <maml:description>
+        <maml:para>Shows the PokemonTCG base URI global variable</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGBaseURI cmdlet shows the PokemonTCG base URI global variable value</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGBaseURI</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGBaseURI</dev:code>
+        <dev:remarks>
+          <maml:para>Shows the PokemonTCG base URI global variable value</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Get-PokemonTCGBaseURI.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Get-PokemonTCGBaseURI.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGModuleSettings</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGModuleSettings</command:noun>
+      <maml:description>
+        <maml:para>Gets the saved PokemonTCG configuration settings</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGModuleSettings cmdlet gets the saved PokemonTCG configuration settings from the local system</maml:para>
+      <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGModuleSettings</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PokemonTCGConfPath</maml:name>
+          <maml:description>
+            <maml:para>Define the location to store the PokemonTCG configuration file</maml:para>
+            <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PokemonTCGConfFile</maml:name>
+          <maml:description>
+            <maml:para>Define the name of the PokemonTCG configuration file</maml:para>
+            <maml:para>By default the configuration file is named:     config.psd1</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Config.psd1</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGModuleSettings</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>openConfFile</maml:name>
+          <maml:description>
+            <maml:para>Opens the PokemonTCG configuration file</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PokemonTCGConfPath</maml:name>
+        <maml:description>
+          <maml:para>Define the location to store the PokemonTCG configuration file</maml:para>
+          <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PokemonTCGConfFile</maml:name>
+        <maml:description>
+          <maml:para>Define the name of the PokemonTCG configuration file</maml:para>
+          <maml:para>By default the configuration file is named:     config.psd1</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Config.psd1</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>openConfFile</maml:name>
+        <maml:description>
+          <maml:para>Opens the PokemonTCG configuration file</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGModuleSettings</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the contents of the configuration file that was created with the Export-PokemonTCGModuleSettings</maml:para>
+          <maml:para>The default location of the PokemonTCG configuration file is:     $env:USERPROFILE\PokemonTCG\config.psd1</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGModuleSettings -PokemonTCGConfPath C:\PokemonTCG -PokemonTCGConfFile MyConfig.psd1 -openConfFile</dev:code>
+        <dev:remarks>
+          <maml:para>Opens the configuration file from the defined location in the default editor</maml:para>
+          <maml:para>The location of the PokemonTCG configuration file in this example is:     C:\PokemonTCG\MyConfig.psd1</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Get-PokemonTCGModuleSettings.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Get-PokemonTCGModuleSettings.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Import-PokemonTCGModuleSettings</command:name>
+      <command:verb>Import</command:verb>
+      <command:noun>PokemonTCGModuleSettings</command:noun>
+      <maml:description>
+        <maml:para>Imports the PokemonTCG BaseURI, API, &amp; JSON configuration information to the current session</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Import-PokemonTCGModuleSettings cmdlet imports the PokemonTCG BaseURI, API, &amp; JSON configuration information stored in the PokemonTCG configuration file to the users current session</maml:para>
+      <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Import-PokemonTCGModuleSettings</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PokemonTCGConfPath</maml:name>
+          <maml:description>
+            <maml:para>Define the location to store the PokemonTCG configuration file</maml:para>
+            <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PokemonTCGConfFile</maml:name>
+          <maml:description>
+            <maml:para>Define the name of the PokemonTCG configuration file</maml:para>
+            <maml:para>By default the configuration file is named:     config.psd1</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Config.psd1</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PokemonTCGConfPath</maml:name>
+        <maml:description>
+          <maml:para>Define the location to store the PokemonTCG configuration file</maml:para>
+          <maml:para>By default the configuration file is stored in the following location:     $env:USERPROFILE\PokemonTCG</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PokemonTCGConfFile</maml:name>
+        <maml:description>
+          <maml:para>Define the name of the PokemonTCG configuration file</maml:para>
+          <maml:para>By default the configuration file is named:     config.psd1</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Config.psd1</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Import-PokemonTCGModuleSettings</dev:code>
+        <dev:remarks>
+          <maml:para>Validates that the configuration file created with the Export-PokemonTCGModuleSettings cmdlet exists then imports the stored data into the current users session</maml:para>
+          <maml:para>The default location of the PokemonTCG configuration file is:     $env:USERPROFILE\PokemonTCG\config.psd1</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Import-PokemonTCGModuleSettings -PokemonTCGConfPath C:\PokemonTCG -PokemonTCGConfFile MyConfig.psd1</dev:code>
+        <dev:remarks>
+          <maml:para>Validates that the configuration file created with the Export-PokemonTCGModuleSettings cmdlet exists then imports the stored data into the current users session</maml:para>
+          <maml:para>The location of the PokemonTCG configuration file in this example is:     C:\PokemonTCG\MyConfig.psd1</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Import-PokemonTCGModuleSettings.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Import-PokemonTCGModuleSettings.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Invoke-PokemonTCGRequest</command:name>
+      <command:verb>Invoke</command:verb>
+      <command:noun>PokemonTCGRequest</command:noun>
+      <maml:description>
+        <maml:para>Makes an API request</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Invoke-PokemonTCGRequest cmdlet invokes an API request to PokemonTCG API</maml:para>
+      <maml:para>This is an internal function that is used by all public functions</maml:para>
+      <maml:para>As of 2024-11 the PokemonTCG v2 API only supports GETrequests</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Invoke-PokemonTCGRequest</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>method</maml:name>
+          <maml:description>
+            <maml:para>Defines the type of API method to use</maml:para>
+            <maml:para>Allowed values: 'GET'</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>GET</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>resourceURI</maml:name>
+          <maml:description>
+            <maml:para>Defines the resource uri (url) to use when creating the API call</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>uriFilter</maml:name>
+          <maml:description>
+            <maml:para>Used with the internal function [ ConvertTo-PokemonTCGQueryString ] to combine a functions parameters with the resourceURI parameter</maml:para>
+            <maml:para>This allows for the full uri query to occur</maml:para>
+            <maml:para>The full resource path is made with the following data $PokemonTCG_BaseURI + $resourceURI + ConvertTo-PokemonTCGQueryString</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>data</maml:name>
+          <maml:description>
+            <maml:para>Place holder parameter to use when other methods are supported by the PokemonTCG v2 API</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>allPages</maml:name>
+          <maml:description>
+            <maml:para>Returns all items from an endpoint</maml:para>
+            <maml:para>When using this parameter there is no need to use the page parameter</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>method</maml:name>
+        <maml:description>
+          <maml:para>Defines the type of API method to use</maml:para>
+          <maml:para>Allowed values: 'GET'</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>GET</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>resourceURI</maml:name>
+        <maml:description>
+          <maml:para>Defines the resource uri (url) to use when creating the API call</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>uriFilter</maml:name>
+        <maml:description>
+          <maml:para>Used with the internal function [ ConvertTo-PokemonTCGQueryString ] to combine a functions parameters with the resourceURI parameter</maml:para>
+          <maml:para>This allows for the full uri query to occur</maml:para>
+          <maml:para>The full resource path is made with the following data $PokemonTCG_BaseURI + $resourceURI + ConvertTo-PokemonTCGQueryString</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+        <dev:type>
+          <maml:name>Hashtable</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>data</maml:name>
+        <maml:description>
+          <maml:para>Place holder parameter to use when other methods are supported by the PokemonTCG v2 API</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+        <dev:type>
+          <maml:name>Hashtable</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>allPages</maml:name>
+        <maml:description>
+          <maml:para>Returns all items from an endpoint</maml:para>
+          <maml:para>When using this parameter there is no need to use the page parameter</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Invoke-PokemonTCGRequest -method GET -resourceURI '/cards' -uriFilter $uriFilter</dev:code>
+        <dev:remarks>
+          <maml:para>Invoke a rest method against the defined resource using any of the provided parameters</maml:para>
+          <maml:para>Example:     Name                           Value     ----                           -----     method                         GET     Uri                            https://api.pokemontcg.io/v2/cards?q=name:ditto     Headers                        {X-Api-Key = 123456789}     Body</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Invoke-PokemonTCGRequest.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Invoke-PokemonTCGRequest.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-PokemonTCGApiKey</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>PokemonTCGApiKey</command:noun>
+      <maml:description>
+        <maml:para>Removes the PokemonTCG API key</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Remove-PokemonTCGApiKey cmdlet removes the PokemonTCG API key global variable</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-PokemonTCGApiKey</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Remove-PokemonTCGApiKey</dev:code>
+        <dev:remarks>
+          <maml:para>Removes the PokemonTCG API key global variable</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Remove-PokemonTCGApiKey.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Remove-PokemonTCGApiKey.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-PokemonTCGBaseURI</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>PokemonTCGBaseURI</command:noun>
+      <maml:description>
+        <maml:para>Removes the PokemonTCG base URI global variable</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Remove-PokemonTCGBaseURI cmdlet removes the PokemonTCG base URI global variable</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-PokemonTCGBaseURI</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Remove-PokemonTCGBaseURI</dev:code>
+        <dev:remarks>
+          <maml:para>Removes the PokemonTCG base URI global variable</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Remove-PokemonTCGBaseURI.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Remove-PokemonTCGBaseURI.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-PokemonTCGModuleSettings</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>PokemonTCGModuleSettings</command:noun>
+      <maml:description>
+        <maml:para>Removes the stored PokemonTCG configuration folder</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Remove-PokemonTCGModuleSettings cmdlet removes the PokemonTCG folder and its files This cmdlet also has the option to remove sensitive PokemonTCG variables as well</maml:para>
+      <maml:para>By default configuration files are stored in the following location and will be removed:     $env:USERPROFILE\PokemonTCG</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-PokemonTCGModuleSettings</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PokemonTCGConfPath</maml:name>
+          <maml:description>
+            <maml:para>Define the location of the PokemonTCG configuration folder</maml:para>
+            <maml:para>By default the configuration folder is located at:     $env:USERPROFILE\PokemonTCG</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>andVariables</maml:name>
+          <maml:description>
+            <maml:para>Define if sensitive PokemonTCG variables should be removed as well</maml:para>
+            <maml:para>By default the variables are not removed</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PokemonTCGConfPath</maml:name>
+        <maml:description>
+          <maml:para>Define the location of the PokemonTCG configuration folder</maml:para>
+          <maml:para>By default the configuration folder is located at:     $env:USERPROFILE\PokemonTCG</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>$(Join-Path -Path $home -ChildPath $(if ($IsWindows -or $PSEdition -eq 'Desktop') {"PokemonTCG"}else{".PokemonTCG"}) )</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>andVariables</maml:name>
+        <maml:description>
+          <maml:para>Define if sensitive PokemonTCG variables should be removed as well</maml:para>
+          <maml:para>By default the variables are not removed</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Remove-PokemonTCGModuleSettings</dev:code>
+        <dev:remarks>
+          <maml:para>Checks to see if the default configuration folder exists and removes it if it does</maml:para>
+          <maml:para>The default location of the PokemonTCG configuration folder is:     $env:USERPROFILE\PokemonTCG</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Remove-PokemonTCGModuleSettings -PokemonTCGConfPath C:\PokemonTCG -andVariables</dev:code>
+        <dev:remarks>
+          <maml:para>Checks to see if the defined configuration folder exists and removes it if it does If sensitive PokemonTCG variables exist then they are removed as well</maml:para>
+          <maml:para>The location of the PokemonTCG configuration folder in this example is:     C:\PokemonTCG</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Remove-PokemonTCGModuleSettings.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Remove-PokemonTCGModuleSettings.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Test-PokemonTCGApiKey</command:name>
+      <command:verb>Test</command:verb>
+      <command:noun>PokemonTCGApiKey</command:noun>
+      <maml:description>
+        <maml:para>Test the PokemonTCG API key</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Test-PokemonTCGApiKey cmdlet tests the base URI &amp; API key that were defined in the Add-PokemonTCGBaseURI &amp; Add-PokemonTCGApiKey cmdlets</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Test-PokemonTCGApiKey</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>BaseURI</maml:name>
+          <maml:description>
+            <maml:para>Define the base URI for the PokemonTCG API connection using PokemonTCG's URI or a custom URI</maml:para>
+            <maml:para>The default base URI is https://api.pokemontcg.io/v2</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>$PokemonTCG_BaseURI</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>BaseURI</maml:name>
+        <maml:description>
+          <maml:para>Define the base URI for the PokemonTCG API connection using PokemonTCG's URI or a custom URI</maml:para>
+          <maml:para>The default base URI is https://api.pokemontcg.io/v2</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>$PokemonTCG_BaseURI</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Test-PokemonTCGBaseURI</dev:code>
+        <dev:remarks>
+          <maml:para>Tests the base URI &amp; API key that was defined in the Add-PokemonTCGBaseURI &amp; Add-PokemonTCGApiKey cmdlets</maml:para>
+          <maml:para>The default full base uri test path is:     https://api.pokemontcg.io/v2/types</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Test-PokemonTCGBaseURI -BaseURI http://myapi.gateway.celerium.org</dev:code>
+        <dev:remarks>
+          <maml:para>Tests the base URI &amp; API key that was defined in the Add-PokemonTCGBaseURI &amp; Add-PokemonTCGApiKey cmdlets</maml:para>
+          <maml:para>The full base uri test path in this example is:     http://myapi.gateway.celerium.org/types</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Test-PokemonTCGApiKey.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Internal/Test-PokemonTCGApiKey.html</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGRarity</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGRarity</command:noun>
+      <maml:description>
+        <maml:para>Gets PokemonTCG rarities</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGRarity cmdlet gets PokemonTCG rarities</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGRarity</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGRarity</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG rarities</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGRarity -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG rarities</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.pokemontcg.io/api-reference/rarities/get-rarities</maml:linkText>
+        <maml:uri>https://docs.pokemontcg.io/api-reference/rarities/get-rarities</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGSet</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGSet</command:noun>
+      <maml:description>
+        <maml:para>Gets PokemonTCG sets</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGSet cmdlet gets PokemonTCG sets individually, in bulk, &amp; or with advanced query filters (Filters are case-sensitive)</maml:para>
+      <maml:para>Details on allowed queries can be found at https://docs.pokemontcg.io/api-reference/sets/set-object#attributes</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGSet</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>id</maml:name>
+          <maml:description>
+            <maml:para>The id of the set</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>select</maml:name>
+          <maml:description>
+            <maml:para>A comma delimited list of fields to return in the response</maml:para>
+            <maml:para>By default, all fields are returned if not defined</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGSet</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>select</maml:name>
+          <maml:description>
+            <maml:para>A comma delimited list of fields to return in the response</maml:para>
+            <maml:para>By default, all fields are returned if not defined</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="query">
+          <maml:name>q</maml:name>
+          <maml:description>
+            <maml:para>The search query</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>orderBy</maml:name>
+          <maml:description>
+            <maml:para>The field(s) to order the results by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>page</maml:name>
+          <maml:description>
+            <maml:para>Defines the page number to return</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+          <dev:type>
+            <maml:name>Int64</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>0</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>pageSize</maml:name>
+          <maml:description>
+            <maml:para>Defines the amount of items to return with each page</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+          <dev:type>
+            <maml:name>Int64</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>0</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>allPages</maml:name>
+          <maml:description>
+            <maml:para>Returns all items from an endpoint</maml:para>
+            <maml:para>When using this parameter there is no need to use the page parameter</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>id</maml:name>
+        <maml:description>
+          <maml:para>The id of the set</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>select</maml:name>
+        <maml:description>
+          <maml:para>A comma delimited list of fields to return in the response</maml:para>
+          <maml:para>By default, all fields are returned if not defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="query">
+        <maml:name>q</maml:name>
+        <maml:description>
+          <maml:para>The search query</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>orderBy</maml:name>
+        <maml:description>
+          <maml:para>The field(s) to order the results by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>page</maml:name>
+        <maml:description>
+          <maml:para>Defines the page number to return</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+        <dev:type>
+          <maml:name>Int64</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>0</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>pageSize</maml:name>
+        <maml:description>
+          <maml:para>Defines the amount of items to return with each page</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
+        <dev:type>
+          <maml:name>Int64</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>0</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>allPages</maml:name>
+        <maml:description>
+          <maml:para>Returns all items from an endpoint</maml:para>
+          <maml:para>When using this parameter there is no need to use the page parameter</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>The PokemonTCG sets object contains the following attributes: (https://docs.pokemontcg.io/api-reference/sets/set-object#attributes) id string name string series string printedTotal integer total integer legalities hash ptcgoCode string releaseDate string updatedAt string images hash</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSet</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG sets</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSet -id base1</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the set with the defined id</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <dev:code>'base1' | Get-PokemonTCGSet</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the set with the defined id</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSet -q 'series:base'</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the first 250 sets with the defined series</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSet -q 'name:base*' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the first 250 sets that start with the defined name</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 6 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSet -q 'series:base printedTotal:[* TO 102]' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Returns the first 250 sets from the defined series that contain up to 102 printed cards</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.pokemontcg.io/api-reference/sets/set-object#attributes</maml:linkText>
+        <maml:uri>https://docs.pokemontcg.io/api-reference/sets/set-object#attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGSubtype</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGSubtype</command:noun>
+      <maml:description>
+        <maml:para>Gets PokemonTCG Subtypes</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGSubtype cmdlet gets PokemonTCG Subtypes</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGSubtype</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSubtype</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG Subtypes</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSubtype -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG Subtypes</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Subtypes/Get-PokemonTCGSubtype.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Subtypes/Get-PokemonTCGSubtype.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.pokemontcg.io/api-reference/subtypes/get-subtypes</maml:linkText>
+        <maml:uri>https://docs.pokemontcg.io/api-reference/subtypes/get-subtypes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGSupertype</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGSupertype</command:noun>
+      <maml:description>
+        <maml:para>Gets PokemonTCG Supertypes</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGSupertype cmdlet gets PokemonTCG Supertypes</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGSupertype</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSupertype</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG Supertypes</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGSupertype -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG Supertypes</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Supertypes/Get-PokemonTCGSupertype.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Supertypes/Get-PokemonTCGSupertype.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.pokemontcg.io/api-reference/supertypes/get-supertypes</maml:linkText>
+        <maml:uri>https://docs.pokemontcg.io/api-reference/supertypes/get-supertypes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-PokemonTCGType</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>PokemonTCGType</command:noun>
+      <maml:description>
+        <maml:para>Gets PokemonTCG types</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-PokemonTCGType cmdlet gets PokemonTCG types</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-PokemonTCGType</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>N/A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGType</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG types</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>Get-PokemonTCGType -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Gets the first 250 PokemonTCG types</maml:para>
+          <maml:para>Progress information is sent to the console while the cmdlet is running</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.pokemontcg.io/api-reference/types/get-types</maml:linkText>
+        <maml:uri>https://docs.pokemontcg.io/api-reference/types/get-types</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>
