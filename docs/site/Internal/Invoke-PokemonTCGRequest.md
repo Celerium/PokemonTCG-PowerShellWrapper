@@ -25,7 +25,7 @@ The Invoke-PokemonTCGRequest cmdlet invokes an API request to PokemonTCG API
 
 This is an internal function that is used by all public functions
 
-As of 2024-11 the PokemonTCG v2 API only supports GETrequests
+As of 2024-11 the PokemonTCG v2 API only supports GET requests
 
 ## EXAMPLES
 

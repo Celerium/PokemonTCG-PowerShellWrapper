@@ -214,7 +214,7 @@ images hash
 
 ## RELATED LINKS
 
-[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html)
+[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Sets/Get-PokemonTCGSet.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Sets/Get-PokemonTCGSet.html)
 
 [https://docs.pokemontcg.io/api-reference/sets/set-object#attributes](https://docs.pokemontcg.io/api-reference/sets/set-object#attributes)
 

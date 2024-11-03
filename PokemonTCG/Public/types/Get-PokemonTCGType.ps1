@@ -22,7 +22,7 @@ function Get-PokemonTCGType {
         N/A
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Types/Get-PokemonTCGType.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/types/get-types

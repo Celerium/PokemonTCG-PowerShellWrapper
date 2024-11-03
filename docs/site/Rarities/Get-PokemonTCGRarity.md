@@ -54,7 +54,7 @@ N/A
 
 ## RELATED LINKS
 
-[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html)
+[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html)
 
 [https://docs.pokemontcg.io/api-reference/rarities/get-rarities](https://docs.pokemontcg.io/api-reference/rarities/get-rarities)
 

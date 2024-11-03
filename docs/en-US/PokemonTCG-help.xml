@@ -382,8 +382,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html</maml:linkText>
-        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html</maml:uri>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Cards/Get-PokemonTCGCard.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Cards/Get-PokemonTCGCard.html</maml:uri>
       </maml:navigationLink>
       <maml:navigationLink>
         <maml:linkText>https://docs.pokemontcg.io/api-reference/cards/card-object#attributes</maml:linkText>
@@ -1102,7 +1102,7 @@
     <maml:description>
       <maml:para>The Invoke-PokemonTCGRequest cmdlet invokes an API request to PokemonTCG API</maml:para>
       <maml:para>This is an internal function that is used by all public functions</maml:para>
-      <maml:para>As of 2024-11 the PokemonTCG v2 API only supports GETrequests</maml:para>
+      <maml:para>As of 2024-11 the PokemonTCG v2 API only supports GET requests</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1708,8 +1708,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html</maml:linkText>
-        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html</maml:uri>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html</maml:uri>
       </maml:navigationLink>
       <maml:navigationLink>
         <maml:linkText>https://docs.pokemontcg.io/api-reference/rarities/get-rarities</maml:linkText>
@@ -1979,8 +1979,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html</maml:linkText>
-        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html</maml:uri>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Sets/Get-PokemonTCGSet.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Sets/Get-PokemonTCGSet.html</maml:uri>
       </maml:navigationLink>
       <maml:navigationLink>
         <maml:linkText>https://docs.pokemontcg.io/api-reference/sets/set-object#attributes</maml:linkText>
@@ -2138,8 +2138,8 @@
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html</maml:linkText>
-        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html</maml:uri>
+        <maml:linkText>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Types/Get-PokemonTCGType.html</maml:linkText>
+        <maml:uri>https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Types/Get-PokemonTCGType.html</maml:uri>
       </maml:navigationLink>
       <maml:navigationLink>
         <maml:linkText>https://docs.pokemontcg.io/api-reference/types/get-types</maml:linkText>

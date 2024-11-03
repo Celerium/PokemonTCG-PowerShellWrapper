@@ -108,7 +108,7 @@ function Get-PokemonTCGCard {
             cardmarket hash
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Cards/Get-PokemonTCGCard.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/cards/card-object#attributes

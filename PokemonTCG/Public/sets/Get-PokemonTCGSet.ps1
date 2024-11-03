@@ -83,7 +83,7 @@ function Get-PokemonTCGSet {
         images hash
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Sets/Get-PokemonTCGSet.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/sets/set-object#attributes

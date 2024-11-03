@@ -106,7 +106,7 @@ function Invoke-PokemonTCGRequest {
 
         This is an internal function that is used by all public functions
 
-        As of 2024-11 the PokemonTCG v2 API only supports GETrequests
+        As of 2024-11 the PokemonTCG v2 API only supports GET requests
 
     .PARAMETER method
         Defines the type of API method to use
@@ -1213,7 +1213,7 @@ function Get-PokemonTCGCard {
             cardmarket hash
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Cards/Get-PokemonTCGCard.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/cards/card-object#attributes
@@ -1315,7 +1315,7 @@ function Get-PokemonTCGRarity {
         N/A
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/rarities/get-rarities
@@ -1436,7 +1436,7 @@ function Get-PokemonTCGSet {
         images hash
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/sets/Get-PokemonTCGSet.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Sets/Get-PokemonTCGSet.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/sets/set-object#attributes
@@ -1658,7 +1658,7 @@ function Get-PokemonTCGType {
         N/A
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Types/Get-PokemonTCGType.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/types/get-types

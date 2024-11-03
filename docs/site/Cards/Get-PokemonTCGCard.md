@@ -241,7 +241,7 @@ The PokemonTCG card object contains the following attributes: (https://docs.poke
 
 ## RELATED LINKS
 
-[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/cards/Get-PokemonTCGCard.html)
+[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Cards/Get-PokemonTCGCard.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Cards/Get-PokemonTCGCard.html)
 
 [https://docs.pokemontcg.io/api-reference/cards/card-object#attributes](https://docs.pokemontcg.io/api-reference/cards/card-object#attributes)
 

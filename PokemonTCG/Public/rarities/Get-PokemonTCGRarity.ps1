@@ -22,7 +22,7 @@ function Get-PokemonTCGRarity {
         N/A
 
     .LINK
-        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/rarities/Get-PokemonTCGRarity.html
+        https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html
 
     .Link
         https://docs.pokemontcg.io/api-reference/rarities/get-rarities

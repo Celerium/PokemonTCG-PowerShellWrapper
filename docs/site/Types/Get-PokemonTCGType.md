@@ -54,7 +54,7 @@ N/A
 
 ## RELATED LINKS
 
-[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/types/Get-PokemonTCGType.html)
+[https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Types/Get-PokemonTCGType.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Types/Get-PokemonTCGType.html)
 
 [https://docs.pokemontcg.io/api-reference/types/get-types](https://docs.pokemontcg.io/api-reference/types/get-types)
 

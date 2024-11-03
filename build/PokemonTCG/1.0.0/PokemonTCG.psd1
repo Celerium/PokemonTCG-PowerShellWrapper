@@ -37,7 +37,7 @@
     Copyright = 'https://github.com/Celerium/PokemonTCG-PowerShellWrapper/blob/main/LICENSE'
 
     # Description of the functionality provided by this module
-    Description = 'This module provides a PowerShell wrapper for the PokemonTCG BCDR & SaaS API.'
+    Description = 'This module provides a PowerShell wrapper for the PokemonTCG.The Pokemon Trading Card Game (PTCG or Pokemon TCG) is a collectible card game based on the popular Pokemon franchise.'
 
     # Minimum version of the Windows PowerShell engine required by this module
     PowerShellVersion = '5.1'
