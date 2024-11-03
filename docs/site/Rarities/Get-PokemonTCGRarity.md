@@ -11,7 +11,6 @@ title: Get-PokemonTCGRarity
 # Get-PokemonTCGRarity
 
 ## SYNOPSIS
-
 Gets PokemonTCG rarities
 
 ## SYNTAX
@@ -21,13 +20,11 @@ Get-PokemonTCGRarity [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-
 The Get-PokemonTCGRarity cmdlet gets PokemonTCG rarities
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-
 ```powershell
 Get-PokemonTCGRarity
 ```
@@ -35,7 +32,6 @@ Get-PokemonTCGRarity
 Gets the first 250 PokemonTCG rarities
 
 ### EXAMPLE 2
-
 ```powershell
 Get-PokemonTCGRarity -Verbose
 ```
@@ -47,7 +43,6 @@ Progress information is sent to the console while the cmdlet is running
 ## PARAMETERS
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -55,7 +50,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-
 N/A
 
 ## RELATED LINKS
@@ -63,3 +57,4 @@ N/A
 [https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html](https://celerium.github.io/PokemonTCG-PowerShellWrapper/site/Rarities/Get-PokemonTCGRarity.html)
 
 [https://docs.pokemontcg.io/api-reference/rarities/get-rarities](https://docs.pokemontcg.io/api-reference/rarities/get-rarities)
+
